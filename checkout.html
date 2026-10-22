@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Brew & Bloom</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header"><div class="nav-wrap">
+  <a class="brand" href="index.html">Brew <span>&</span> Bloom.</a>
+  <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+  <nav class="nav-links">
+    <a href="index.html">Home</a><a href="shop.html">Shop</a>
+    <a href="about.html">About</a><a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="nav-actions"><button class="icon-btn theme-toggle">◐</button>
+    <a class="btn small" href="cart.html">Cart <span class="cart-count">0</span></a>
+  </div>
+</div></header>
+
+<main>
+  <section class="page-hero"><div class="container">
+    <span class="eyebrow">Almost there</span>
+    <h1>Checkout</h1>
+    <p>Enter your delivery details and review your order.</p>
+  </div></section>
+
+  <section class="section" style="padding-top:20px">
+    <div class="container checkout-grid">
+      <div class="panel">
+        <h2>Delivery information</h2>
+        <form id="checkout-form">
+          <div class="field">
+            <label for="full-name">Full name</label>
+            <input id="full-name" required minlength="2" placeholder="Recipient name">
+          </div>
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" type="email" required placeholder="you@example.com">
+          </div>
+          <div class="field">
+            <label for="phone">Mobile number</label>
+            <input id="phone" type="tel" required pattern="[0-9+() -]{7,20}" placeholder="+63 9XX XXX XXXX">
+          </div>
+          <div class="field">
+            <label for="address">Complete delivery address</label>
+            <textarea id="address" required minlength="10" placeholder="House number, street, barangay, city"></textarea>
+          </div>
+          <div class="field">
+            <label for="payment">Payment method</label>
+            <select id="payment" required>
+              <option value="">Choose payment method</option>
+              <option>Cash on delivery (demo)</option>
+              <option>GCash (demo only)</option>
+              <option>Card (demo only)</option>
+            </select>
+          </div>
+          <button type="submit">Place demo order ↗</button>
+          <p class="small-muted" style="margin-top:12px">Demo only: no payment is collected and customer data is not sent to a server.</p>
+        </form>
+        <div id="order-success" class="notice success-message"></div>
+      </div>
+
+      <div class="panel">
+        <h2>Order summary</h2>
+        <div id="checkout-summary"></div>
+        <a class="btn secondary" href="cart.html" style="width:100%;margin-top:15px">Edit cart</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div><a class="brand" href="index.html">Brew <span>&</span> Bloom.</a><p>Good coffee. Better moments.</p></div>
+    <div><h3>Explore</h3><a href="shop.html">Shop</a><a href="gallery.html">Gallery</a></div>
+    <div><h3>Contact</h3><a href="contact.html">Contact us</a><p>Mon–Sat, 8 AM–8 PM</p></div>
+  </div>
+  <div class="footer-bottom">© 2026 Brew & Bloom Coffee Co.</div>
+</div></footer>
+<div id="toast" class="toast" role="status"></div>
+</body>
+</html>

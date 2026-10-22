@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Brew & Bloom</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="nav-wrap">
+    <a class="brand" href="index.html">Brew <span>&</span> Bloom.</a>
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+    <nav class="nav-links">
+      <a class="active" href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn theme-toggle">◐</button>
+      <a class="btn small" href="cart.html">Cart <span class="cart-count">0</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">Your daily pause, poured perfectly</span>
+        <h1>Good coffee.<br><span style="color:var(--accent)">Better moments.</span></h1>
+        <p>Discover small-batch coffee, handcrafted drinks, and thoughtful essentials made for slow mornings and bright ideas.</p>
+        <div class="btn-row">
+          <a class="btn" href="shop.html">Shop the collection ↗</a>
+          <a class="btn secondary" href="about.html">Our story</a>
+        </div>
+        <div class="trust-row">
+          <span>✦ <strong>Small-batch</strong> roasted</span>
+          <span>♡ <strong>Made with</strong> care</span>
+          <span>☕ <strong>Good vibes</strong> daily</span>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=1200&q=90" alt="Freshly brewed coffee">
+        <div class="hero-tag">
+          <strong>Your new favorite ritual</strong>
+          <small>Fresh coffee, delivered with care.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Made for your moment</span>
+          <h2>Customer favorites</h2>
+        </div>
+        <a class="btn secondary" href="shop.html">View all products →</a>
+      </div>
+      <div id="featured-products" class="product-grid"></div>
+    </div>
+  </section>
+
+  <section class="feature-band">
+    <div class="container feature-grid">
+      <div class="feature">
+        <div class="feature-icon">🌱</div>
+        <h3>Thoughtfully sourced</h3>
+        <p>We choose quality beans and ingredients with care, one batch at a time.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">☕</div>
+        <h3>Crafted with intention</h3>
+        <p>Every cup is made to bring comfort to your everyday routine.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon">📦</div>
+        <h3>Easy online ordering</h3>
+        <p>Browse our collection and prepare your next coffee moment in a few clicks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container about-grid">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1000&q=85" alt="Coffee beans and brewing tools">
+      <div>
+        <span class="eyebrow">A little more than coffee</span>
+        <h2>Made for the moments in between.</h2>
+        <p>Brew & Bloom started with one simple idea: the everyday deserves something special. From your first morning sip to an afternoon reset, we bring together quality, warmth, and a welcoming coffee culture.</p>
+        <a class="btn" href="about.html">Meet Brew & Bloom</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">Brew <span>&</span> Bloom.</a>
+        <p>Thoughtfully sourced coffee, comforting drinks, and little rituals that make ordinary days feel special.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <a href="shop.html">Shop all</a>
+        <a href="about.html">Our story</a>
+        <a href="gallery.html">Gallery</a>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <a href="contact.html">Contact us</a>
+        <a href="mailto:hello@brewandbloom.example">Email us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Brew & Bloom Coffee Co.</span>
+      <span>Made with care and a little caffeine ☕</span>
+    </div>
+  </div>
+</footer>
+<div id="toast" class="toast" role="status"></div>
+</body>
+</html>

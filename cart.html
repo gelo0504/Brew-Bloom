@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart | Brew & Bloom</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header"><div class="nav-wrap">
+  <a class="brand" href="index.html">Brew <span>&</span> Bloom.</a>
+  <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+  <nav class="nav-links">
+    <a href="index.html">Home</a><a href="shop.html">Shop</a>
+    <a href="about.html">About</a><a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <div class="nav-actions"><button class="icon-btn theme-toggle">◐</button>
+    <a class="btn small" href="cart.html">Cart <span class="cart-count">0</span></a>
+  </div>
+</div></header>
+
+<main>
+  <section class="page-hero"><div class="container">
+    <span class="eyebrow">Your picks</span>
+    <h1>Shopping cart</h1>
+    <p>Review your items before moving to checkout.</p>
+  </div></section>
+
+  <section class="section" style="padding-top:20px">
+    <div class="container">
+      <div id="cart-items" class="panel"></div>
+
+      <div id="cart-summary" class="panel" style="max-width:460px;margin:22px 0 0 auto">
+        <div class="summary-line"><span>Subtotal</span><strong id="subtotal">₱0.00</strong></div>
+        <div class="summary-line"><span>Shipping</span><strong id="shipping">₱0.00</strong></div>
+        <p class="small-muted">Shipping is free for orders of ₱1,000 or more. Otherwise, a sample ₱80 shipping fee applies.</p>
+        <div class="summary-line total"><span>Total</span><strong id="grand-total">₱0.00</strong></div>
+        <a href="checkout.html" class="btn" style="width:100%;margin-top:12px">Proceed to checkout →</a>
+        <a href="shop.html" class="btn secondary" style="width:100%;margin-top:10px">Continue shopping</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer"><div class="container">
+  <div class="footer-grid">
+    <div><a class="brand" href="index.html">Brew <span>&</span> Bloom.</a><p>Good coffee. Better moments.</p></div>
+    <div><h3>Explore</h3><a href="shop.html">Shop</a><a href="gallery.html">Gallery</a></div>
+    <div><h3>Contact</h3><a href="contact.html">Contact us</a><p>Mon–Sat, 8 AM–8 PM</p></div>
+  </div>
+  <div class="footer-bottom">© 2026 Brew & Bloom Coffee Co.</div>
+</div></footer>
+<div id="toast" class="toast" role="status"></div>
+</body>
+</html>
